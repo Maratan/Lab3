@@ -1,7 +1,8 @@
 from uid import *
 from friends import *
 
-user = GetID('faynky')
+input_id = input('Введите id: ')
+user = GetID(input_id)
 user_id = user.execute()
 
 friends_client = GetFriends(user_id)
